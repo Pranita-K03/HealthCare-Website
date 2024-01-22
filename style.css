@@ -233,7 +233,7 @@ li {
 
 .owl-item img {
     width: 100%;
-    height: 40cm;
+    height: 50vh;
     object-fit: cover;
 }
 .owl-nav .owl-prev,
