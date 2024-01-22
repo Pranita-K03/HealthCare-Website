@@ -342,71 +342,70 @@ li {
                 font-size: 14px;
             }
         }
+/* Footer */
 .footer {
-    background-color: rgb(20, 37, 37);
-    color: #fff;
-    padding: 20px;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-around;
+}
+
+.footer-important,
+.top_hospitals,
+.Speciality,
+.Medical {
+  flex: 1 1 250px; /* Set a flex basis to control item width */
+  margin: 0 10px 20px;
+}
+
+h2 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.credit {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.credit span {
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
-  
+
   .footer-important,
   .top_hospitals,
   .Speciality,
   .Medical {
-    flex: 1 1 250px;
-    margin: 0 10px 20px;
+    flex: 1 0 100%; /* Full width on smaller screens */
+    margin: 0 0 20px;
   }
-  
-  h2 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 8px 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .credit {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-  }
-  
-  .credit span {
-    font-weight: bold;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      text-align: center; /* Center text on smaller screens */
-    }
-  
-    .footer-important,
-    .top_hospitals,
-    .Speciality,
-    .Medical {
-      flex: 1 0 100%;
-      margin: 0 0 20px;
-    }
-  }
-
+}
 
 
 /* form temp */
