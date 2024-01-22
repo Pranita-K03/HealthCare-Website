@@ -342,118 +342,71 @@ li {
                 font-size: 14px;
             }
         }
-
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .footer-content p {
-            margin: 0;
-        }
-
-        .social-media {
-            margin-top: 10px;
-        }
-
-        .social-media a {
-            display: inline-block;
-            margin-right: 10px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-            }
-
-            .social-media {
-                margin-top: 20px;
-            }
-        }
-        hr {
-            border: 1px solid #ccc;
-            margin: 20px 0;
-            width: 30cm;
-        }
-        /* footer */
 .footer {
-    background-color:  rgb(10, 58, 58);
+    background-color: rgb(20, 37, 37);
     color: #fff;
-    padding: 20px 0;
-    position: sticky;
-    height: 30vh;
-}
-
-.footer-content {
+    padding: 20px;
+  }
+  
+  .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.footer-section {
-    width: 30%;
-    padding: 10px;
-}
-
-.footer-section h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.footer-section p {
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-
-.footer-section ul {
-    list-style: none;
+  }
+  
+  .footer-important,
+  .top_hospitals,
+  .Speciality,
+  .Medical {
+    flex: 1 1 250px;
+    margin: 0 10px 20px;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
     padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-.footer .credit{
-    width: 100%;
-    text-align: center;
+  }
+  
+  li {
+    margin: 8px 0;
+  }
+  
+  a {
+    text-decoration: none;
     color: #fff;
-    font-size: 1rem;
-    padding: 1rem 0;
-    margin: 1rem 0;
-    margin-bottom: 0;
-    border-top: 0.1rem solid #aaa;
-    letter-spacing: 0.2rem;
-}
-.footer .credit span{
-    color: #080a0e;
-}
-@media only screen and (max-width: 768px) {
-    .form {
-        padding: 15px;
+  }
+  
+  .credit {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .credit span {
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center; /* Center text on smaller screens */
     }
+  
+    .footer-important,
+    .top_hospitals,
+    .Speciality,
+    .Medical {
+      flex: 1 0 100%;
+      margin: 0 0 20px;
+    }
+  }
 
-    h2 {
-        font-size: 20px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-}
 
 
 /* form temp */
